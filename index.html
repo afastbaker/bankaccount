@@ -1,0 +1,46 @@
+<!DOCTYPEhtml>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1> Movie Tickets For All </h1>
+      <form id="formal">
+        <div class="form-group">
+          <label for="genre"> Genre </label>
+          <select id="genre" class="form-control">
+          <option> Horror </option>
+          <option> Romance </option>
+          <option> Agricultural Documentaries </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="time"> Movie Time </label>
+          <select id="time" class="form-control">
+          <option> Morning </option>
+          <option> Afternoon </option>
+          <option> Evening </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="age"> Age </label>
+          <select id="age" class="form-control">
+          <option> Under 18 </option>
+          <option> Adult </option>
+          <option> Senior </option>
+          </select>
+        </div>
+        <button type="submit" class="btn-success"> Submit </button>
+      </form>
+      <div id="result">
+        <p> Price: <span class="result"></span> </p>
+      </div>
+    </div>
+  </body>
+</html>
